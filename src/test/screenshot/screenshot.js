@@ -3,7 +3,7 @@ const fs = require('fs-extra');
 
 /* eslint-disable no-undef */
 beforeAll(async() => {
-  await page.goto('https://qiita.com/');
+  await page.goto('https://qiita.com/itizawa');
 });
 
 afterAll(async(done) => {

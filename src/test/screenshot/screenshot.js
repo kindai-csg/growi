@@ -11,15 +11,14 @@ afterAll(async(done) => {
 });
 
 it('Top page', async() => {
-  await page.screenshot({ path: 'src/test/screenshot/after/top.png' });
 
-  const imageBefore = fs.readFileSync('src/test/screenshot/before/top.png');
-  const imageAfter = fs.readFileSync('src/test/screenshot/after/top.png');
+  const imageStock = fs.readFileSync('src/test/screenshot/stock/top.png');
+  const image = await page.screenshot();
 
   let misMatchPercentage = 0;
 
   // Compare the difference between before and after
-  resemble(imageAfter).compareTo(imageBefore)
+  resemble(image).compareTo(imageStock)
     .ignoreColors()
     .onComplete((data) => {
       // fs.writeFileSync('src/test/screenshot/diff/top.png', data.getBuffer());

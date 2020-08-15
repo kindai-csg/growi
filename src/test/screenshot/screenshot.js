@@ -21,7 +21,7 @@ it('Top page', async() => {
   resemble(image).compareTo(imageStock)
     .ignoreColors()
     .onComplete((data) => {
-      // fs.writeFileSync('src/test/screenshot/diff/top.png', data.getBuffer());
+      fs.writeFileSync('src/test/screenshot/diff/top.png', data.getBuffer());
       misMatchPercentage = data.misMatchPercentage;
     });
 

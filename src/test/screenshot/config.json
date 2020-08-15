@@ -1,4 +1,4 @@
 {
   "preset": "jest-puppeteer",
-  "testMatch": ["/**/*.e2e.js"]
+  "testMatch": ["/**/screenshot.js"]
 }

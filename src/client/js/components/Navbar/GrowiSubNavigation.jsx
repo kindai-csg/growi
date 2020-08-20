@@ -18,6 +18,8 @@ import RevisionPathControls from '../Page/RevisionPathControls';
 import TagLabels from '../Page/TagLabels';
 import LikeButton from '../LikeButton';
 import BookmarkButton from '../BookmarkButton';
+import ThreeStrandedButton from '../ThreeStrandedButton';
+
 
 import PageCreator from './PageCreator';
 import RevisionAuthor from './RevisionAuthor';
@@ -119,6 +121,10 @@ const PageReactionButtons = ({ appContainer, pageContainer }) => {
       <span className="mr-2">
         <BookmarkButton pageId={pageId} crowi={appContainer} />
       </span>
+      <span className="mr-2">
+        <ThreeStrandedButton />
+      </span>
+
     </>
   );
 };

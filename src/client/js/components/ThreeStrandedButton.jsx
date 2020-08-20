@@ -19,6 +19,11 @@ const ThreeStrandedButton = (props) => {
   return (
     <>
       {/* TODO GW-3253 add four contents */}
+      <div className="btn-group" role="group" aria-label="基本のボタングループ">
+        <button type="button" className="btn page-link text-dark d-inline-block">左</button>
+        <button type="button" className="btn page-link text-dark d-inline-block">中</button>
+        <button type="button" className="btn page-link text-dark d-inline-block">右</button>
+      </div>
     </>
   );
 

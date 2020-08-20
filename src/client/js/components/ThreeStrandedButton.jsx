@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import loggerFactory from '@alias/logger';
 
 import { withTranslation } from 'react-i18next';
 
@@ -8,10 +7,6 @@ import PageContainer from '../services/PageContainer';
 import NavigationContainer from '../services/NavigationContainer';
 
 import { withUnstatedContainers } from './UnstatedUtils';
-// import StickyStretchableScroller from './StickyStretchableScroller';
-
-// eslint-disable-next-line no-unused-vars
-// const logger = loggerFactory('growi:TableOfContents');
 
 /**
  * @author Yuki Takei <yuki@weseek.co.jp>

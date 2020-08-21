@@ -128,7 +128,7 @@ const PageReactionButtons = ({ appContainer, pageContainer }) => {
 
 const GrowiSubNavigation = (props) => {
   const {
-    appContainer, navigationContainer, pageContainer, isCompactMode,
+    t, appContainer, navigationContainer, pageContainer, isCompactMode,
   } = props;
   const { isDrawerMode } = navigationContainer.state;
   const {
@@ -190,11 +190,19 @@ const GrowiSubNavigation = (props) => {
             { !isPageInTrash && <PageReactionButtons appContainer={appContainer} pageContainer={pageContainer} /> }
           </div>
           <div className="mt-2">
-            {/* TODO: impl View / Edit / HackMD button group */}
-            <div className="btn-group" role="group" aria-label="Basic example">
-              <button type="button" className="btn btn-outline-primary">View</button>
-              <button type="button" className="btn btn-outline-primary">Edit</button>
-              <button type="button" className="btn btn-outline-primary">HackMD</button>
+            <div className="btn-group three-stranded-button" role="group" aria-label="three-stranded-button">
+              <button type="button" className="btn btn-outline-primary">
+                <i className="icon-control-play icon-fw" />
+                { t('View') }
+              </button>
+              <button type="button" className="btn btn-outline-primary">
+                <i className="icon-note icon-fw" />
+                { t('Edit') }
+              </button>
+              <button type="button" className="btn btn-outline-primary">
+                <i className="fa fa-fw fa-file-text-o" />
+                { t('HackMD') }
+              </button>
             </div>
           </div>
         </div>

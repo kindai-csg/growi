@@ -190,7 +190,7 @@ const GrowiSubNavigation = (props) => {
             { !isPageInTrash && <PageReactionButtons appContainer={appContainer} pageContainer={pageContainer} /> }
           </div>
           <div className="mt-2">
-            <div className="btn-group three-stranded-button" role="group" aria-label="three-stranded-button">
+            <div className="btn-group" role="group" aria-label="three-stranded-button">
               <button type="button" className="btn btn-outline-primary">
                 <i className="icon-control-play icon-fw" />
                 { t('View') }
